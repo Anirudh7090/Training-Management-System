@@ -1,0 +1,7 @@
+.tabs { display: flex; gap: 6px; margin-bottom: 16px; }
+.tab {
+  padding: 8px 14px; border-radius: 8px; font-size: 13px; font-weight: 600;
+  color: var(--text-muted); background: transparent; text-decoration: none; cursor: pointer;
+}
+.tab.active { background: #fff; color: var(--text); border: 1px solid var(--border); }
+.budget { color: var(--primary); font-weight: 600; }
