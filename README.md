@@ -165,15 +165,6 @@ All routes are prefixed `/api`. Everything except `/auth/*` requires the header 
 - **Parameterized SQL everywhere.** All queries use `?` placeholders, preventing SQL injection.
 - **Secrets in `.env`** (gitignored), with a committed `.env.example` so anyone can configure their own environment.
 
-## Known Design Choices (not bugs)
-
-- Registering redirects to Login — you sign in manually after creating an account.
-- The HOD dropdown is empty until employees exist: create departments first, add employees, then edit departments to set HODs.
-- Deleting a department that still has employees is blocked (foreign key protection).
-- Employee PX codes come from database IDs, so deleted employees leave gaps — codes are never resequenced.
-- TNI matrix edits save on blur (when an input loses focus), not on every keystroke.
-- Course completion % is the average progress of its assignees, so it reads 0% until someone is assigned.
-
 ## License
 
 Internal training/assignment project — not licensed for redistribution.
